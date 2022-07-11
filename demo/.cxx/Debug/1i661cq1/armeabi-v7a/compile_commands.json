@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Volumes/Samsung_T5/SRC/ShareDemo/demo/.cxx/Debug/1i661cq1/armeabi-v7a",
+  "command": "/Users/daqi/Library/Android/sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi21 --gcc-toolchain=/Users/daqi/Library/Android/sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/daqi/Library/Android/sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Ddaqi_EXPORTS -isystem /Users/daqi/.gradle/caches/transforms-3/8e8c0be3c997d549e081a4f36e9bd5eb/transformed/fbjni-0.2.2/prefab/modules/fbjni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC -o CMakeFiles/daqi.dir/src/main/cpp/native-lib.cpp.o -c /Volumes/Samsung_T5/SRC/ShareDemo/demo/src/main/cpp/native-lib.cpp",
+  "file": "/Volumes/Samsung_T5/SRC/ShareDemo/demo/src/main/cpp/native-lib.cpp"
+}
+]

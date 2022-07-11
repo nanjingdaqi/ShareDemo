@@ -1,0 +1,7 @@
+Executable : /Users/daqi/Library/Android/sdk/cmake/3.18.1/bin/ninja
+arguments : 
+-C
+/Volumes/Samsung_T5/SRC/ShareDemo/demo/.cxx/Debug/1i661cq1/armeabi-v7a
+daqi
+jvmArgs : 
+

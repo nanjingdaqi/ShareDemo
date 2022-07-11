@@ -1,0 +1,21 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+        mavenLocal()
+    }
+
+    dependencies {
+        if (gradle.startParameter.projectProperties.containsKey("demo")) {
+            classpath "daqi:plugin:${PLUGIN_VERSION}"
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        google()
+        mavenLocal()
+    }
+}

@@ -1,0 +1,6 @@
+include ':plugin'
+
+// 解决升级版本时，demo config时找不到plugin版本的问题
+if (gradle.startParameter.projectProperties.containsKey("demo")) {
+    include ':demo'
+}

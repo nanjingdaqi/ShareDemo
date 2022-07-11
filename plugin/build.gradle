@@ -1,19 +1,9 @@
-buildscript {
-    repositories {
-        mavenCentral()
-        google()
-        mavenLocal()
-    }
-}
-
 apply plugin: 'java'
 apply plugin: 'groovy'
 apply plugin: 'maven-publish'
 
-group = 'daqi'
-
 dependencies {
-    implementation(gradleApi())
+    compile(gradleApi())
 }
 
 publishing {

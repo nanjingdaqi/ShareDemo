@@ -1,17 +1,3 @@
-buildscript {
-    repositories {
-        mavenCentral()
-        google()
-        mavenLocal()
-    }
-
-    dependencies {
-        // 不需要指定版本号
-        // daqi对应的是 plugin project的group属性, plugin是其module属性
-        classpath('daqi:plugin')
-    }
-}
-
 apply plugin: 'java'
 
 apply plugin: 'share.plugin'

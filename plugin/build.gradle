@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+        mavenLocal()
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'maven-publish'
+
+group = 'daqi'
+
+dependencies {
+    implementation(gradleApi())
+}
+
+publishing {
+    publications {
+        'Pub'(MavenPublication) {
+            from components.java
+            groupId = 'daqi'
+            artifactId = 'plugin'
+            version = PLUGIN_VERSION
+        }
+    }
+}

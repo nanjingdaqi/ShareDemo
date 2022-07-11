@@ -1,0 +1,55 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+        mavenLocal()
+    }
+
+    dependencies {
+        // 不需要指定版本号
+        classpath('daqi:plugin')
+        classpath 'com.android.tools.build:gradle:7.1.1'
+    }
+}
+
+repositories {
+    mavenCentral()
+    google()
+    mavenLocal()
+}
+
+apply plugin: 'com.android.application'
+
+apply plugin: 'share.plugin'
+
+android {
+    compileSdkVersion 31
+
+    defaultConfig {
+        minSdkVersion 21
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+        externalNativeBuild {
+            cmake {
+                arguments "-DHERMES_IS_ANDROID=True"
+                arguments "-DANDROID_STL=c++_shared"
+                arguments "-DANDROID_PIE=True"
+                arguments "-DANDROID_LD=lld"
+                targets "daqi"
+            }
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+    buildFeatures {
+        prefab true
+    }
+}
+
+dependencies {
+    implementation("com.facebook.fbjni:fbjni:0.2.2")
+}
